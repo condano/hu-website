@@ -1,12 +1,298 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>Hu 的第一个网站</title>
+    <title>Hu 的创意与项目实验室</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #111827;
+            color: #f9fafb;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        header h1 {
+            margin: 0 0 4px 0;
+            font-size: 20px;
+        }
+        header p {
+            margin: 0;
+            font-size: 13px;
+            opacity: 0.8;
+        }
+        nav {
+            margin-top: 8px;
+        }
+        nav a {
+            color: #e5e7eb;
+            margin-right: 16px;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 24px 16px 40px;
+        }
+        section {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 20px 20px 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+        }
+        section h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 999px;
+            font-size: 11px;
+            background-color: #eef2ff;
+            color: #3730a3;
+            margin-right: 6px;
+            margin-bottom: 4px;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin-top: 8px;
+        }
+        .card {
+            border-radius: 10px;
+            padding: 12px 12px 14px;
+            border: 1px solid #e5e7eb;
+            background-color: #f9fafb;
+        }
+        .card h3 {
+            margin: 0 0 6px 0;
+            font-size: 14px;
+        }
+        .card p {
+            margin: 0;
+            font-size: 12px;
+            color: #4b5563;
+        }
+        .canvas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+            margin-top: 12px;
+        }
+        .canvas-block {
+            border-radius: 10px;
+            border: 1px dashed #d1d5db;
+            padding: 10px;
+            background-color: #f9fafb;
+        }
+        .canvas-block h3 {
+            margin: 0 0 4px 0;
+            font-size: 13px;
+        }
+        .canvas-block p {
+            margin: 0;
+            font-size: 12px;
+            color: #4b5563;
+        }
+        .note {
+            font-size: 12px;
+            color: #6b7280;
+            margin-top: 8px;
+        }
+        footer {
+            text-align: center;
+            font-size: 11px;
+            color: #9ca3af;
+            padding: 12px 0 18px;
+        }
+    </style>
 </head>
 <body>
-    <h1>你好，我的网站跑起来啦！</h1>
-    <p>这是你的第一个网页。</p>
-    <p>我们正在进行 2 天试玩项目（② 简单网站）。</p>
+<header>
+    <h1>Hu 的创意与项目实验室</h1>
+    <p>泡芙 × AR 眼镜 × AI / 硬件商业模型的个人试验场</p>
+    <nav>
+        <a href="#home">首页</a>
+        <a href="#ar">AR × 泡芙联名创意</a>
+        <a href="#ai-hardware">AI / AR 办公空间商业 Canvas</a>
+    </nav>
+</header>
+
+<main>
+    <!-- 首页 -->
+    <section id="home">
+        <h2>👋 欢迎来到 Hu 的实验室</h2>
+        <p>
+            这里是我把「快消零食 + AR 眼镜 + AI / 硬件」各种想法落地的地方。<br>
+            不追求完美，只追求：先做出来、先看得到、先跑起来。
+        </p>
+        <div class="note">
+            当前版本：V0.1 – 先把结构搭好，后续逐步补充内容 / 视觉 / 交互。
+        </div>
+    </section>
+
+    <!-- ⑤ AR × 泡芙联名创意 -->
+    <section id="ar">
+        <h2>🥽 AR × 泡芙联名：2D → 3D 透镜玩法</h2>
+        <span class="tag">零食联名</span>
+        <span class="tag">AR 眼镜</span>
+        <span class="tag">2D → 3D 视觉</span>
+
+        <p>
+            核心想法：<br>
+            通过随盒附赠的透镜片 / AR 视效，让泡芙包装上的 2D 图案，在用户眼中变成 3D 立体、甚至动态的互动体验。
+        </p>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3>① 核心体验设想</h3>
+                <p>
+                    · 消费者拿起包装，通过透镜片 / AR 眼镜，看到泡芙形象“跳出来”。<br>
+                    · 可以做简单互动，比如点一下会有爆浆动画、积分彩蛋等。<br>
+                    · 重点是「新奇感 + 社交分享」。
+                </p>
+            </div>
+            <div class="card">
+                <h3>② 场景设计</h3>
+                <p>
+                    · 主要消费场景：宿舍、办公室、追剧、游戏开黑。<br>
+                    · 强调「一个人也可以玩的零食互动」+「朋友间互拍互玩」。<br>
+                    · 可以和短视频平台合作做「特效滤镜 + 泡芙联名」。
+                </p>
+            </div>
+            <div class="card">
+                <h3>③ 物料与成本大方向</h3>
+                <p>
+                    · 随盒透镜卡片（低成本薄片，印刷 + 透镜结构）。<br>
+                    · 包装上预留 AR 识别区域 / 特殊图案。<br>
+                    · 数字内容由 AR 合作方或内部视觉团队开发。
+                </p>
+            </div>
+            <div class="card">
+                <h3>④ 商业价值假设</h3>
+                <p>
+                    · 带来「新品话题度」和「社交媒体曝光」。<br>
+                    · 为 AR 眼镜品牌提供线下触达年轻人的入口。<br>
+                    · 为零食品牌提供「科技感 + 新鲜感」标签。
+                </p>
+            </div>
+        </div>
+
+        <div class="note">
+            👉 这里的文字你可以慢慢替换成更具体的想法，比如锁定具体品牌、渠道、活动形式、KPI 等。
+        </div>
+    </section>
+
+    <!-- ⑥ AI + 硬件 / AR 办公空间 商业 Canvas -->
+    <section id="ai-hardware">
+        <h2>💼 沉浸式办公 AR / AI 空间：商业模型 Canvas</h2>
+        <span class="tag">AI + 硬件</span>
+        <span class="tag">AR 办公</span>
+        <span class="tag">项目可视化</span>
+
+        <p>
+            设想：<br>
+            通过 AR 眼镜，在现实空间里看到每个人「带着自己项目进度 / 卡点」的可视化信息，<br>
+            打造一个沉浸式、透明协作的办公环境。
+        </p>
+
+        <div class="canvas">
+            <div class="canvas-block">
+                <h3>1. 目标用户</h3>
+                <p>
+                    · 中小团队 / 创业公司 / 产品团队。<br>
+                    · 需要高频项目协作、信息透明，但工具使用门槛高。
+                </p>
+            </div>
+            <div class="canvas-block">
+                <h3>2. 核心价值主张</h3>
+                <p>
+                    · 把项目管理「贴」到现实空间里（人 / 工位 / 会议室）。<br>
+                    · 一眼看到谁在做什么、哪里卡住了、下一步是什么。
+                </p>
+            </div>
+            <div class="canvas-block">
+                <h3>3. 关键功能设想</h3>
+                <p>
+                    · 人物头顶 / 身边的项目进度条。<br>
+                    · 会议时自动汇总相关任务卡片。<br>
+                    · 使用手势 / 视线交互更新状态。
+                </p>
+            </div>
+            <div class="canvas-block">
+                <h3>4. 收入模型</h3>
+                <p>
+                    · SaaS 订阅（按人头 / 团队）。<br>
+                    · 与 AR 眼镜硬件厂商 Bundled 方案。<br>
+                    · 为大企业定制部署收费。
+                </p>
+            </div>
+            <div class="canvas-block">
+                <h3>5. 合作伙伴</h3>
+                <p>
+                    · AR 眼镜厂商。<br>
+                    · 项目管理 / 协作工具平台。<br>
+                    · 试点办公空间 / 联合办公品牌。
+                </p>
+            </div>
+            <div class="canvas-block">
+                <h3>6. 成本结构</h3>
+                <p>
+                    · 产品开发（视觉、交互、后端服务）。<br>
+                    · 商务 BD + 试点合作。<br>
+                    · 服务器与基础运维。
+                </p>
+            </div>
+            <div class="canvas-block">
+                <h3>7. 渠道与获客</h3>
+                <p>
+                    · 通过 AR 硬件官方渠道联合推广。<br>
+                    · 针对中小团队的线上投放 / 内容营销。<br>
+                    · 会议 / 创业大赛 / 孵化器 Demo 展示。
+                </p>
+            </div>
+            <div class="canvas-block">
+                <h3>8. 用户关系</h3>
+                <p>
+                    · 深度服务少量“标杆团队”。<br>
+                    · 用成功案例带动 SaaS 扩张。<br>
+                    · 社区反馈驱动迭代。
+                </p>
+            </div>
+            <div class="canvas-block">
+                <h3>9. 待验证的关键假设</h3>
+                <p>
+                    · 团队是否真的愿意换用 AR 形态办公？<br>
+                    · 学习成本是否会压过带来的效率提升？<br>
+                    · 硬件成本 + 软件订阅，是否有足够的 ROI？
+                </p>
+            </div>
+        </div>
+
+        <div class="note">
+            👉 这一块就是你的「商业模型一页纸」，后面可以继续拆：目标行业、切入场景、MVP 功能列表等。
+        </div>
+    </section>
+</main>
+
+<footer>
+    当前站点版本：V0.1 · 由 Hu 手工搭建 & 持续迭代中
+</footer>
 </body>
 </html>
+
+
