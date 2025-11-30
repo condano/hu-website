@@ -11,6 +11,15 @@
             line-height: 1.6;
             background-color: #f7f7f7;
         }
+        <section id="interests">
+    <h2>选择你的兴趣领域</h2>
+    <button onclick="showInterest('ar')">AR × 泡芙创意</button>
+    <button onclick="showInterest('ai-hardware')">AI 硬件商业 Canvas</button>
+    <div id="interest-content">
+        <!-- 这里将动态显示内容 -->
+    </div>
+</section>
+
         header {
             background-color: #111827;
             color: #f9fafb;
@@ -294,5 +303,22 @@
 </footer>
 </body>
 </html>
+<script>
+    function showInterest(topic) {
+        var contentDiv = document.getElementById('interest-content');
+        if (topic === 'ar') {
+            contentDiv.innerHTML = `
+                <h3>AR × 泡芙联名创意</h3>
+                <p>通过 AR 透镜，让泡芙包装图案变成 3D 效果，增强消费者的互动体验。</p>
+            `;
+        } else if (topic === 'ai-hardware') {
+            contentDiv.innerHTML = `
+                <h3>AI 硬件商业 Canvas</h3>
+                <p>展示如何在 AR 办公空间中通过可视化项目进度来提升团队协作效率。</p>
+            `;
+        }
+    }
+</script>
+
 
 
